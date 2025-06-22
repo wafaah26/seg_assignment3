@@ -1,38 +1,59 @@
-.App {
+body {
+  background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.btn {
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.display-3 {
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  color: #222;
+}
+
+input.form-control {
+  font-size: 1.2em;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+select.form-control {
+  background-color: #eef2f3 !important;
+  border-radius: 8px;
+  border: 1px solid #ccc;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.fullscreen-centered {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 1rem;
+  background-color: #f9f9f9;
+  padding: 2rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.memory-box {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 500px;
 }
